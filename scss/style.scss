@@ -1,0 +1,186 @@
+$background-color: #ffffff;
+$background-header: #fcdb00;
+$background-header-lighter: #feed80;
+// $background-contact:#43434f;
+// $background-logo: #3f4c7b;
+// $background-button: #6f72f7;
+$font-color: #212121;
+// $font-color-second: #696969;
+// $font-color-h: #c0a064;
+// $font-color-logo: #ffffff;
+$font-family: 'PT Sans', sans-serif;
+// $font-size-small:11px;
+// $font-size:14px;
+$font-size-icons:38px;
+$font-size-middle:22px;
+$font-size-big:30px;
+// $padding-main:90px;
+// $padding-main-mobile:45px;
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family:$font-family;
+}
+.main-page {
+  background:$background-header;
+  padding-bottom: 40px;
+}
+.title {
+  padding-top: 40px;
+}
+.title a, .fa-fingerprint, .title-content {
+  color: $font-color;
+  font-weight: bold;
+  font-size: $font-size-middle;
+}
+.logo, .title-content {
+    font-size: $font-size-big;
+}
+.icons {
+  color: $font-color;
+  font-weight: bold;
+  font-size: $font-size-big;
+  margin:0 20px;
+}
+.icons:hover {
+    text-decoration: none;
+}
+.content {
+  @media (max-width: 575px) {
+  text-align: center;
+  }
+}
+.content, .title-content {
+  background: transparent;
+  border: none;
+}
+.content {
+  padding:60px 0;
+  @media (max-width: 575px) {
+padding:20px 0;
+  }
+}
+.fa-mobile {
+  font-size: 400px;
+  @media (max-width: 768px) {
+font-size: 300px;
+  }
+}
+.logo-inverse {
+  text-align: center;
+  position: relative;
+}
+.mobile-img {
+    text-align: center;
+    @media (max-width: 991px) {
+padding-top: 20%;
+    }
+    @media (max-width: 575px) {
+  padding-top: 0%;
+    }
+}
+.logo-inverse-link {
+  color: $background-header;
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  @media (max-width: 768px) {
+left: 20%;
+  }
+}
+.fingerprint-link {
+    color: $background-header;
+}
+.menu-block {
+  font-weight: bold;
+  font-size: $font-size-middle;
+}
+.menu-block:hover{
+  border-color: $font-color;
+}
+.circle-block {
+  text-align: center;
+  padding-top: 40px;
+}
+.circle-block button {
+width: 15px;
+height: 15px;
+border: none;
+border-radius: 15px;
+background: $background-header-lighter;
+}
+.circle-block button:hover {
+  background: $background-color;
+}
+.main-block h2 {
+  font-weight: bold;
+  font-size: $font-size-big;
+}
+.icons-features {
+  font-size: $font-size-icons;
+}
+.contact-block {
+  background: $font-color;
+}
+.contact-block h2 {
+  color: $background-header;
+  font-size:$font-size-big;
+  font-weight: bold;
+}
+.contact-block p {
+  color: $background-color;
+}
+.input-block {
+  width: 80%;
+  margin: 0 auto;
+  @media (max-width: 576px) {
+    display: inline-block;
+  width: 100%;
+  }
+}
+.input-email {
+  margin-right: 20px;
+  @media (max-width: 576px) {
+    margin: 0 auto;
+  }
+}
+.btn-submit {
+  background: $background-header;
+  color: $font-color;
+  font-weight: bold;
+  padding: 0 30px;
+  @media (max-width: 576px) {
+  padding: 10px 30px ;
+  margin: 0 auto;
+  width: 50%;
+  }
+}
+.btn-submit:hover {
+  background: $font-color;
+  color: $background-header;
+}
+.submit-block {
+  @media (max-width: 576px) {
+  padding: 20px;
+  }
+}
+.my-icons {
+  font-size:$font-size-big;
+  color: $background-header;
+  background: $font-color;
+  margin: 10px;
+}
+.my-icons-link:hover {
+    text-decoratiodn: none;
+}
+.contact-info {
+  color: $background-color;
+}
+.link-info a {
+  color: $background-color;
+  text-decoration: none;
+}
+.link-info p {
+  margin-bottom: 0;
+}
