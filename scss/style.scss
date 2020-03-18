@@ -1,21 +1,11 @@
 $background-color: #ffffff;
 $background-header: #fcdb00;
 $background-header-lighter: #feed80;
-// $background-contact:#43434f;
-// $background-logo: #3f4c7b;
-// $background-button: #6f72f7;
 $font-color: #212121;
-// $font-color-second: #696969;
-// $font-color-h: #c0a064;
-// $font-color-logo: #ffffff;
 $font-family: 'PT Sans', sans-serif;
-// $font-size-small:11px;
-// $font-size:14px;
 $font-size-icons:38px;
 $font-size-middle:22px;
 $font-size-big:30px;
-// $padding-main:90px;
-// $padding-main-mobile:45px;
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 * {
@@ -24,18 +14,40 @@ $font-size-big:30px;
 }
 .main-page {
   background:$background-header;
-  padding-bottom: 40px;
-}
-.title {
-  padding-top: 40px;
+  padding: 40px 0;
 }
 .title a, .fa-fingerprint, .title-content {
   color: $font-color;
   font-weight: bold;
   font-size: $font-size-middle;
 }
+.title {
+  padding-bottom: 40px;
+}
+.menu-bar {
+  text-align: center;
+}
+.menu-xs {
+  text-align: right;
+  padding: 0 30px;
+}
+.dropdown-background {
+  background:$background-header;
+  border: 1px solid $font-color;
+}
+.dropdown-item:hover {
+  background:$background-header;
+  font-weight: bold;
+}
+.logo-block {
+  padding-left: 30px;
+}
 .logo, .title-content {
     font-size: $font-size-big;
+}
+.logo-inverse-link:hover {
+  color: $background-header;
+  text-decoration: underline;
 }
 .icons {
   color: $font-color;
@@ -45,10 +57,12 @@ $font-size-big:30px;
 }
 .icons:hover {
     text-decoration: none;
+    font-size: $font-size-icons;
+    color: $font-color;
 }
 .content {
-  @media (max-width: 575px) {
-  text-align: center;
+  @media (max-width: 991px) {
+  text-align: justify;
   }
 }
 .content, .title-content {
@@ -57,27 +71,29 @@ $font-size-big:30px;
 }
 .content {
   padding:60px 0;
-  @media (max-width: 575px) {
+  @media (max-width: 991px) {
 padding:20px 0;
   }
 }
 .fa-mobile {
   font-size: 400px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
 font-size: 300px;
   }
 }
 .logo-inverse {
-  text-align: center;
   position: relative;
 }
 .mobile-img {
     text-align: center;
     @media (max-width: 991px) {
-padding-top: 20%;
+padding-top: 40px;
+    }
+    @media (max-width: 767px) {
+padding-top: 80px;
     }
     @media (max-width: 575px) {
-  padding-top: 0%;
+padding-top: 0;
     }
 }
 .logo-inverse-link {
@@ -172,7 +188,7 @@ background: $background-header-lighter;
   margin: 10px;
 }
 .my-icons-link:hover {
-    text-decoratiodn: none;
+  text-decoration: none;
 }
 .contact-info {
   color: $background-color;

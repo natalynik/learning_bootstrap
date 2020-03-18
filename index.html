@@ -14,13 +14,28 @@
 <body>
 <header class="main-page">
   <div class="container">
-    <!-- Image and text -->
-<nav class="navbar title">
+  <div class="row justify-content-between title">
+    <div class="col-4 col-md-5 col-lg-7 logo-block">
   <a class="navbar-brand " href="#">
     <i class="fas fa-fingerprint"></i>
     <span class="logo">tinyone</span>
   </a>
-  <ul class="nav justify-content-end d-none d-sm-flex">
+  </div>
+  <div class="col-8 d-sm-none menu-xs">
+  <div class="btn-group dropleft ">
+    <button type="button" class="btn dropdown-toggle menu-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <i class="fas fa-bars"></i>
+      Menu
+    </button>
+    <div class="dropdown-menu dropdown-background">
+      <button class="dropdown-item" type="button">Features</button>
+       <button class="dropdown-item" type="button">Support</button>
+       <button class="dropdown-item" type="button">Blog</button>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-8 col-md-7 col-lg-5 menu-bar">
+  <ul class="nav d-none d-sm-inline-flex">
   <li class="nav-item">
     <a class="nav-link active" href="#">Features</a>
   </li>
@@ -31,27 +46,17 @@
     <a class="nav-link" href="#">Blog</a>
   </li>
 </ul>
-<div class="btn-group dropleft d-sm-none">
-  <button type="button" class="btn dropdown-toggle menu-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-<i class="fas fa-bars"></i>
-    Menu
-  </button>
-  <div class="dropdown-menu">
-    <button class="dropdown-item" type="button">Features</button>
-     <button class="dropdown-item" type="button">Support</button>
-     <button class="dropdown-item" type="button">Blog</button>
-  </div>
 </div>
-</nav>
-<div class="row">
-  <div class="col-sm-6">
+</div>
+<div class="row ">
+  <div class=" col-sm-7 col-md-5 col-lg-7">
     <div class="card content">
-      <h5 class="card-header title-content">Inspire your inspiration</h5>
+      <h5 class="card-header title-content text-center">Inspire your inspiration</h5>
       <div class="card-body">
         <h5 class="card-title">Simple to use for your app, products showcase and your inspiration</h5>
-        <p class="card-text d-sm-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit
         </p>
-        <div class="icons-systems">
+        <div class="icons-systems text-center">
           <a href="#" class="icons"> <i class="fab fa-apple"></i>
             </a>
             <a href="#" class="icons"> <i class="fab fa-android"></i>
@@ -62,9 +67,9 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-6 ">
-    <div class="mobile-img">
-      <i class="fas fa-mobile logo-inverse">
+  <div class="col-sm-5 col-md-7 col-lg-5">
+    <div class="mobile-img ">
+      <i class="fas fa-mobile logo-inverse ">
         <a class="navbar-brand logo-inverse-link" href="#">
           <i class="fas fa-fingerprint fingerprint-link"> </i>
           <span class="logo">tinyone</span>
@@ -154,7 +159,7 @@
     <button class="btn btn-outline-secondary btn-submit" type="button" id="button-addon2">SUBMIT</button>
   </div>
 </div>
-<div class="social-icons py-5 text-center ">
+<div class="social-icons py-4 text-center ">
   <a href="#" class="my-icons-link"> <i class="fab fa-facebook-square my-icons"></i>
   </a>
   <a href="#" class="my-icons-link"> <i class="fab fa-twitter-square my-icons"></i>
@@ -164,17 +169,17 @@
   <a href="#" class="my-icons-link"> <i class="fab fa-pinterest-square my-icons"></i>
   </a>
 </div>
-<footer class="py-5 contact-info">
-  <div class="row">
-    <div class="col-6 col-sm-4 link-info">
-      <p>HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam</p>
-      <p>contact@halovietnam.com</p>
-      <p>+844 35149182</p>
+<footer class="py-4 contact-info">
+  <div class="row flex-sm-row-reverse">
+    <div class="col-3 col-sm-2 link-info">
+      <p><a href="#"> Media  </a> </p>
+      <p><a href="#"> Blog </a> </p>
+      <p><a href="#"> Forums </a> </p>
     </div>
     <div class="col-3 col-sm-2 link-info">
-      <p><a href="#"> Examples  </a> </p>
-    <p><a href="#"> Shop  </a> </p>
-      <p><a href="#"> license  </a> </p>
+      <p><a href="#"> Download  </a> </p>
+      <p><a href="#"> Support </a> </p>
+      <p><a href="#"> Documents </a> </p>
     </div>
     <div class="col-3 col-sm-2 link-info">
       <p><a href="#"> Contact  </a> </p>
@@ -182,15 +187,15 @@
       <p><a href="#"> Privacy </a> </p>
       <p><a href="#"> Terms </a> </p>
     </div>
-    <div class="col-4 col-sm-2 link-info d-none d-sm-inline">
-      <p><a href="#"> Download  </a> </p>
-      <p><a href="#"> Support </a> </p>
-      <p><a href="#"> Documents </a> </p>
+    <div class="col-3 col-sm-2 link-info">
+      <p><a href="#"> Examples  </a> </p>
+    <p><a href="#"> Shop  </a> </p>
+      <p><a href="#"> license  </a> </p>
     </div>
-    <div class="col-4 col-sm-2 link-info  d-none d-sm-inline">
-      <p><a href="#"> Media  </a> </p>
-      <p><a href="#"> Blog </a> </p>
-      <p><a href="#"> Forums </a> </p>
+    <div class="col-sm-4 link-info text-center text-sm-left pt-4 pt-sm-0">
+      <p>HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam</p>
+      <p>contact@halovietnam.com</p>
+      <p>+844 35149182</p>
     </div>
   </div>
 
